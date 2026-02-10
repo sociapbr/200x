@@ -47,7 +47,7 @@
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(description);
-    card.appendChild(contentDescription);
+//   card.appendChild(contentDescription);
     card.appendChild(link);
 
     col.appendChild(card);
