@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Pai Rico, Pai Pobre",
+    "autor": "Robert T. Kiyosaki",
+    "categoria": "Mentalidade financeira",
+    "descricao": "Princípios de educação financeira e construção de ativos.",
+    "link": "https://www.amazon.com.br/dp/8550801488"
+  },
+  {
+    "titulo": "Os Segredos da Mente Milionária",
+    "autor": "T. Harv Eker",
+    "categoria": "Comportamento",
+    "descricao": "Como crenças e hábitos afetam suas decisões com dinheiro.",
+    "link": "https://www.amazon.com.br/dp/8575422391"
+  },
+  {
+    "titulo": "Me Poupe!",
+    "autor": "Nathalia Arcuri",
+    "categoria": "Finanças pessoais",
+    "descricao": "Guia prático para organização financeira e investimento inicial.",
+    "link": "https://www.amazon.com.br/dp/8543106018"
+  },
+  {
+    "titulo": "Do Mil ao Milhão",
+    "autor": "Thiago Nigro",
+    "categoria": "Planejamento",
+    "descricao": "Estratégias para gastar melhor, investir e aumentar patrimônio.",
+    "link": "https://www.amazon.com.br/dp/8595083274"
+  },
+  {
+    "titulo": "O Investidor Inteligente",
+    "autor": "Benjamin Graham",
+    "categoria": "Investimentos",
+    "descricao": "Clássico sobre análise de valor e disciplina para investir.",
+    "link": "https://www.amazon.com.br/dp/8595080801"
+  },
+  {
+    "titulo": "Psicologia Financeira",
+    "autor": "Morgan Housel",
+    "categoria": "Comportamento",
+    "descricao": "Lições sobre decisões financeiras, risco e visão de longo prazo.",
+    "link": "https://www.amazon.com.br/dp/6555111100"
+  }
+]
