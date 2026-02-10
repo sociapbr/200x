@@ -31,9 +31,9 @@
     description.className = 'mil-mb-15';
     description.textContent = book.descricao;
 
-    const contentDescription = document.createElement('p');
-    contentDescription.className = 'mil-mb-30';
-    contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
+//   const contentDescription = document.createElement('p');
+//   contentDescription.className = 'mil-mb-30';
+//   contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
 
     const link = document.createElement('a');
     link.className = 'mil-link mil-light mil-arrow-place';
