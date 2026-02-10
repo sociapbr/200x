@@ -126,20 +126,13 @@
                                     </div>
                                     <div class="mil-divider mil-mb-60"></div>
                                     <div class="row justify-content-between">
-
                                         <div class="col-lg-4 mil-mb-60">
-
                                             <h6 class="mil-muted mil-mb-30">Canada</h6>
-
                                             <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
                                         </div>
                                         <div class="col-lg-4 mil-mb-60">
-
                                             <h6 class="mil-muted mil-mb-30">Germany</h6>
-
                                             <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
                                         </div>
                                     </div>
                                 </div>
@@ -517,28 +510,22 @@
                             </div>
                         </div>
                         <div class="row">
-                            {{range .FirstList }}
                                 <div class="col-lg-6">
-                                    <a href="/post/{{ .Path}}" class="mil-blog-card mil-mb-60">
+                                    <a href="/post/" class="mil-blog-card mil-mb-60">
                                         <div class="mil-cover-frame mil-up">
-                                            {{if eq .Image ""}}
                                                 <img src="https://img.agendawallet.com/agendawallet/posts/no-image.jpg">
-                                            {{else}}
-                                                <img alt="{{ .Title }}" src="{{ .Image }}">
-                                            {{end}}
                                         </div>
                                         <div class="mil-post-descr">
                                             <div class="mil-labels mil-up mil-mb-30">
-                                                <div class="mil-label mil-upper mil-accent">{{ .MainPost.Tag }}</div>
+                                                <div class="mil-label mil-upper mil-accent">.MainPost.Tag</div>
                                             </div>
-                                            <h4 class="mil-up mil-mb-30">{{ .Title }}</h4>
+                                            <h4 class="mil-up mil-mb-30">.Title</h4>
                                             <div class="mil-link mil-dark mil-arrow-place mil-up">
                                                 <span>Read more</span>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                            {{end}}
                         </div>
                     </div>
                 </section>
@@ -562,10 +549,10 @@
                                                         <a href="/">Home</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="/post/conhecimento">Conhecimento</a>
+                                                        <a href="/post/conhecimento">Trilha do Conhecimento</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="/post/contratar-consultoria.html">Consultoria</a>
+                                                        <a href="/post/contratar-consultoria.html">Biblioteca</a>
                                                     </li>
                                                     <li class="mil-up">
                                                         <a href="/post/co-criacao.html">Co-criacao</a>
@@ -589,7 +576,7 @@
                             <div class="row justify-content-between flex-sm-row-reverse">
                                 <div class="col-md-4 col-lg-6 mil-mb-60">
                                     <div class="mil-vert-between">
-                                        <p class="mil-light-soft mil-up">© Copyright 2024 - 200x. All Rights Reserved.</p>
+                                        <p class="mil-light-soft mil-up">© Copyright 2026 - 200x. All Rights Reserved.</p>
                                     </div>
                                 </div>
                             </div>
@@ -710,22 +697,14 @@
     </div>
     <!-- wrapper end -->
 
-    <!-- jQuery js -->
-    <script src="js/plugins/jquery.min.js"></script>
-    <!-- swup js -->
-    <script src="js/plugins/swup.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- fancybox js -->
-    <script src="js/plugins/fancybox.min.js"></script>
-    <!-- gsap js -->
-    <script src="js/plugins/gsap.min.js"></script>
-    <!-- scroll smoother -->
-    <script src="js/plugins/smooth-scroll.js"></script>
-    <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
-    <script src="js/plugins/ScrollTo.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/plugins/jquery.min.js"></script>
+    <script src="/js/plugins/swup.min.js"></script>
+    <script src="/js/plugins/swiper.min.js"></script>
+    <script src="/js/plugins/fancybox.min.js"></script>
+    <script src="/js/plugins/gsap.min.js"></script>
+    <script src="/js/plugins/smooth-scroll.js"></script>
+    <script src="/js/plugins/ScrollTrigger.min.js"></script>
+    <script src="/js/plugins/ScrollTo.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
