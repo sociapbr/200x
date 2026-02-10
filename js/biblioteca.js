@@ -36,7 +36,7 @@
 //   contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
 
     const link = document.createElement('a');
-    link.className = 'mil-link mil-light mil-arrow-place';
+    link.className = 'mil-link mil-arrow-place';
     link.href = book.link;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
