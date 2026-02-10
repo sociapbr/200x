@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "A psicologia financeira",
+    "autor": "Morgan Housel",
+    "categoria": "Mentalidade financeira",
+    "link": "https://www.amazon.com.br/dp/6555111100",
+    "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
+  },  
+  {
     "titulo": "Pai Rico, Pai Pobre",
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
