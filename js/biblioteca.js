@@ -7,10 +7,16 @@
     col.className = 'col-md-6 col-lg-4 mil-services-grid-item p-0';
 
     const card = document.createElement('article');
-    card.className = 'mil-service-card-sm';
+    card.className = 'mil-service-card-sm mil-book-card';
+
+    const image = document.createElement('img');
+    image.className = 'mil-book-cover mil-mb-20';
+    image.src = book.imagem;
+    image.alt = `Capa do livro ${book.titulo}`;
+    image.loading = 'lazy';
 
     const category = document.createElement('p');
-    category.className = 'mil-light-soft mil-mb-15';
+    category.className = 'mil-light mil-mb-15';
     category.textContent = book.categoria;
 
     const title = document.createElement('h5');
@@ -18,24 +24,30 @@
     title.textContent = book.titulo;
 
     const author = document.createElement('p');
-    author.className = 'mil-light-soft mil-mb-15';
+    author.className = 'mil-light mil-mb-15';
     author.textContent = `Autor: ${book.autor}`;
 
     const description = document.createElement('p');
-    description.className = 'mil-light-soft mil-mb-30';
+    description.className = 'mil-light mil-mb-15';
     description.textContent = book.descricao;
 
+    const contentDescription = document.createElement('p');
+    contentDescription.className = 'mil-light mil-mb-30';
+    contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
+
     const link = document.createElement('a');
-    link.className = 'mil-link mil-dark mil-arrow-place';
+    link.className = 'mil-link mil-light mil-arrow-place';
     link.href = book.link;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.textContent = 'Ver livro';
 
+    card.appendChild(image);
     card.appendChild(category);
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(description);
+    card.appendChild(contentDescription);
     card.appendChild(link);
 
     col.appendChild(card);

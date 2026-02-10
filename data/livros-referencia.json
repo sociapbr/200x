@@ -4,41 +4,53 @@
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
     "descricao": "Princípios de educação financeira e construção de ativos.",
-    "link": "https://www.amazon.com.br/dp/8550801488"
+    "link": "https://www.amazon.com.br/dp/8550801488",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg",
+    "conteudo": "Mostra diferenças de mentalidade entre trabalhar por dinheiro e construir ativos que geram renda."
   },
   {
     "titulo": "Os Segredos da Mente Milionária",
     "autor": "T. Harv Eker",
     "categoria": "Comportamento",
     "descricao": "Como crenças e hábitos afetam suas decisões com dinheiro.",
-    "link": "https://www.amazon.com.br/dp/8575422391"
+    "link": "https://www.amazon.com.br/dp/8575422391",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81T6Q1jX5-L.jpg",
+    "conteudo": "Explica padrões mentais que influenciam ganhos, gastos e crescimento financeiro ao longo do tempo."
   },
   {
     "titulo": "Me Poupe!",
     "autor": "Nathalia Arcuri",
     "categoria": "Finanças pessoais",
     "descricao": "Guia prático para organização financeira e investimento inicial.",
-    "link": "https://www.amazon.com.br/dp/8543106018"
+    "link": "https://www.amazon.com.br/dp/8543106018",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg",
+    "conteudo": "Apresenta passos objetivos para quitar dívidas, organizar orçamento e começar a investir."
   },
   {
     "titulo": "Do Mil ao Milhão",
     "autor": "Thiago Nigro",
     "categoria": "Planejamento",
     "descricao": "Estratégias para gastar melhor, investir e aumentar patrimônio.",
-    "link": "https://www.amazon.com.br/dp/8595083274"
+    "link": "https://www.amazon.com.br/dp/8595083274",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg",
+    "conteudo": "Resume um método em três pilares: gastar bem, investir melhor e ganhar mais com constância."
   },
   {
     "titulo": "O Investidor Inteligente",
     "autor": "Benjamin Graham",
     "categoria": "Investimentos",
     "descricao": "Clássico sobre análise de valor e disciplina para investir.",
-    "link": "https://www.amazon.com.br/dp/8595080801"
+    "link": "https://www.amazon.com.br/dp/8595080801",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg",
+    "conteudo": "Ensina investimento em valor, margem de segurança e disciplina para decisões racionais."
   },
   {
     "titulo": "Psicologia Financeira",
     "autor": "Morgan Housel",
     "categoria": "Comportamento",
     "descricao": "Lições sobre decisões financeiras, risco e visão de longo prazo.",
-    "link": "https://www.amazon.com.br/dp/6555111100"
+    "link": "https://www.amazon.com.br/dp/6555111100",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
+    "conteudo": "Aborda como emoções, comportamento e contexto moldam resultados financeiros mais do que técnica."
   }
 ]

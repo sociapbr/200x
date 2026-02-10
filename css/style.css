@@ -4145,3 +4145,31 @@ html.is-animating .mil-menu-frame {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+/* Biblioteca */
+.mil-book-card p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.mil-book-cover {
+  width: 100%;
+  max-width: 180px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.mil-book-card .mil-link.mil-light {
+  color: rgb(255, 255, 255);
+}
+
+.mil-book-card .mil-link.mil-light svg {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.mil-book-card .mil-link.mil-light svg path {
+  fill: rgb(255, 255, 255);
+}
