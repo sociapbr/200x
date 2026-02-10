@@ -42,10 +42,10 @@
     link.rel = 'noopener noreferrer';
 //    link.textContent = 'Ver livro';
 
-    link.appendChild(image);
-    link.appendChild(category);
-    link.appendChild(title);
-    link.appendChild(author);
+    card.appendChild(image);
+    card.appendChild(category);
+    card.appendChild(title);
+    card.appendChild(author);
 //   card.appendChild(description);
 //   card.appendChild(contentDescription);
     card.appendChild(link);
