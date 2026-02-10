@@ -16,11 +16,11 @@
     image.loading = 'lazy';
 
     const category = document.createElement('p');
-    category.className = 'mil-mb-15';
+    category.className = '';
     category.textContent = book.categoria;
 
     const title = document.createElement('h5');
-    title.className = 'mil-muted mil-mb-15';
+    title.className = '';
     title.textContent = book.titulo;
 
     const author = document.createElement('p');
