@@ -40,7 +40,7 @@
     link.href = book.link;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-//    link.textContent = 'Ver livro';
+    link.textContent = 'Ver livro';
 
     card.appendChild(image);
     card.appendChild(category);
