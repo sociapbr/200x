@@ -25,11 +25,11 @@
 
     const author = document.createElement('p');
     author.className = 'mil-mb-15';
-    author.textContent = `Autor: ${book.autor}`;
+    author.textContent = book.autor;
 
-    const description = document.createElement('p');
-    description.className = 'mil-mb-15';
-    description.textContent = book.descricao;
+//   const description = document.createElement('p');
+//   description.className = 'mil-mb-15';
+//   description.textContent = book.descricao;
 
 //   const contentDescription = document.createElement('p');
 //   contentDescription.className = 'mil-mb-30';
@@ -46,7 +46,7 @@
     card.appendChild(category);
     card.appendChild(title);
     card.appendChild(author);
-    card.appendChild(description);
+//   card.appendChild(description);
 //   card.appendChild(contentDescription);
     card.appendChild(link);
 
