@@ -115,14 +115,6 @@
     author.className = 'mil-mb-15';
     author.textContent = book.autor;
 
-//   const description = document.createElement('p');
-//   description.className = 'mil-mb-15';
-//   description.textContent = book.descricao;
-
-//   const contentDescription = document.createElement('p');
-//   contentDescription.className = 'mil-mb-30';
-//   contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
-
     const link = document.createElement('a');
     link.className = 'mil-link mil-arrow-place';
     link.href = book.link;
@@ -137,8 +129,6 @@
     card.appendChild(category);
     card.appendChild(title);
     card.appendChild(author);
-//   card.appendChild(description);
-//   card.appendChild(contentDescription);
     card.appendChild(link);
 
     col.appendChild(card);
