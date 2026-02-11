@@ -11,7 +11,7 @@
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
     "link": "/livros/pai-rico-pai-pobre.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg"
   },
   {
     "titulo": "Os Segredos da Mente Milionária",
@@ -25,28 +25,27 @@
     "autor": "Nathalia Arcuri",
     "categoria": "Finanças pessoais",
     "link": "/livros/me-poupe.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg"
   },
   {
     "titulo": "Do Mil ao Milhão",
     "autor": "Thiago Nigro",
     "categoria": "Planejamento",
     "link": "/livros/do-mil-ao-milhao.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg",
-    "conteudo": "Resume um método em três pilares: gastar bem, investir melhor e ganhar mais com constância."
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg"
   },
   {
     "titulo": "O Investidor Inteligente",
     "autor": "Benjamin Graham",
     "categoria": "Investimentos",
     "link": "/livros/o-investidor-inteligente.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg"
   },
   {
     "titulo": "Hábitos Atômicos",
     "autor": "James Clear",
     "categoria": "Produtividade",
     "link": "/livros/habitos-atomicos.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg"
   }
 ]
