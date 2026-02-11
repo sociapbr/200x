@@ -43,7 +43,7 @@
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
     }
-    link.textContent = 'Ver livro';
+    link.textContent = 'Ver resumo';
 
     card.appendChild(image);
     card.appendChild(category);
