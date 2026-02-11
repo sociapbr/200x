@@ -2,65 +2,51 @@
   {
     "titulo": "A psicologia financeira",
     "autor": "Morgan Housel",
-    "categoria": "Mentalidade financeira",
-    "link": "https://www.amazon.com.br/dp/6555111100",
+    "categoria": "Comportamento",
+    "link": "/livros/a-psicologia-financeira.html",
     "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
   },
   {
     "titulo": "Pai Rico, Pai Pobre",
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
-    "descricao": "Princípios de educação financeira e construção de ativos.",
     "link": "/livros/pai-rico-pai-pobre.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg",
-    "conteudo": "Mostra diferenças de mentalidade entre trabalhar por dinheiro e construir ativos que geram renda."
   },
   {
     "titulo": "Os Segredos da Mente Milionária",
     "autor": "T. Harv Eker",
     "categoria": "Comportamento",
-    "descricao": "Como crenças e hábitos afetam suas decisões com dinheiro.",
-    "link": "https://www.amazon.com.br/dp/8575422391",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81T6Q1jX5-L.jpg",
-    "conteudo": "Explica padrões mentais que influenciam ganhos, gastos e crescimento financeiro ao longo do tempo."
+    "link": "/livros/os-segredos-da-mente-milionaria.html",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81T6Q1jX5-L.jpg"
   },
   {
     "titulo": "Me Poupe!",
     "autor": "Nathalia Arcuri",
     "categoria": "Finanças pessoais",
-    "descricao": "Guia prático para organização financeira e investimento inicial.",
-    "link": "https://www.amazon.com.br/dp/8543106018",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg"
+    "link": "/livros/me-poupe.html",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg",
   },
   {
     "titulo": "Do Mil ao Milhão",
     "autor": "Thiago Nigro",
     "categoria": "Planejamento",
-    "descricao": "Estratégias para gastar melhor, investir e aumentar patrimônio.",
-    "link": "https://www.amazon.com.br/dp/8595083274",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg"
+    "link": "/livros/do-mil-ao-milhao.html",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg",
+    "conteudo": "Resume um método em três pilares: gastar bem, investir melhor e ganhar mais com constância."
   },
   {
     "titulo": "O Investidor Inteligente",
     "autor": "Benjamin Graham",
     "categoria": "Investimentos",
-    "descricao": "Clássico sobre análise de valor e disciplina para investir.",
-    "link": "https://www.amazon.com.br/dp/8595080801",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg"
-  },
-  {
-    "titulo": "Psicologia Financeira",
-    "autor": "Morgan Housel",
-    "categoria": "Comportamento",
-    "link": "https://www.amazon.com.br/dp/6555111100",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg"
+    "link": "/livros/o-investidor-inteligente.html",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg",
   },
   {
     "titulo": "Hábitos Atômicos",
     "autor": "James Clear",
     "categoria": "Produtividade",
-    "descricao": "Método prático para criar bons hábitos e eliminar comportamentos negativos.",
-    "link": "https://www.amazon.com.br/dp/8550807567",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg"
+    "link": "/livros/habitos-atomicos.html",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg",
   }
 ]
