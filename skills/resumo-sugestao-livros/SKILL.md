@@ -1,6 +1,6 @@
 ---
 name: resumo-sugestao-livros
-description: Criar resumos curtos de livros de finanças e sugerir próximas leituras com base em tema, nível e objetivo do usuário. Usar quando o pedido envolver recomendar livros, resumir livros, montar listas de leitura, ou transformar o catálogo atual do site 200x em conteúdo de biblioteca/páginas de livro.
+description: Criar resumos bem explicados de livros de finanças e sugerir próximas leituras com base em tema, nível e objetivo do usuário. Usar quando o pedido envolver recomendar livros, resumir livros, montar listas de leitura, ou transformar o catálogo atual do site 200x em conteúdo de biblioteca/páginas de livro.
 ---
 
 # Resumo e Sugestão de Livros
@@ -19,6 +19,7 @@ Priorizar respostas práticas: resumo em linguagem simples, motivo da indicaçã
    - livro principal;
    - resumo em 3 a 5 frases;
    - 2 a 4 sugestões complementares com justificativa curta.
+5 - Atualizar a listagem de referências em .json
 
 ## Formato recomendado de resposta
 
