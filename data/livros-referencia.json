@@ -2,7 +2,7 @@
   {
     "titulo": "A psicologia financeira",
     "autor": "Morgan Housel",
-    "categoria": "Mentalidade financeira",
+    "categoria": "Comportamento",
     "link": "/livros/a-psicologia-financeira.html",
     "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
   },
@@ -10,10 +10,8 @@
     "titulo": "Pai Rico, Pai Pobre",
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
-    "descricao": "Princípios de educação financeira e construção de ativos.",
     "link": "/livros/pai-rico-pai-pobre.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg",
-    "conteudo": "Mostra diferenças de mentalidade entre trabalhar por dinheiro e construir ativos que geram renda."
   },
   {
     "titulo": "Os Segredos da Mente Milionária",
@@ -26,16 +24,13 @@
     "titulo": "Me Poupe!",
     "autor": "Nathalia Arcuri",
     "categoria": "Finanças pessoais",
-    "descricao": "Guia prático para organização financeira e investimento inicial.",
     "link": "/livros/me-poupe.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71FF2hXQ9cL.jpg",
-    "conteudo": "Apresenta passos objetivos para quitar dívidas, organizar orçamento e começar a investir."
   },
   {
     "titulo": "Do Mil ao Milhão",
     "autor": "Thiago Nigro",
     "categoria": "Planejamento",
-    "descricao": "Estratégias para gastar melhor, investir e aumentar patrimônio.",
     "link": "/livros/do-mil-ao-milhao.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71M1Q0kG4UL.jpg",
     "conteudo": "Resume um método em três pilares: gastar bem, investir melhor e ganhar mais com constância."
@@ -44,27 +39,14 @@
     "titulo": "O Investidor Inteligente",
     "autor": "Benjamin Graham",
     "categoria": "Investimentos",
-    "descricao": "Clássico sobre análise de valor e disciplina para investir.",
     "link": "/livros/o-investidor-inteligente.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/91f7s5xYhSL.jpg",
-    "conteudo": "Ensina investimento em valor, margem de segurança e disciplina para decisões racionais."
-  },
-  {
-    "titulo": "Psicologia Financeira",
-    "autor": "Morgan Housel",
-    "categoria": "Comportamento",
-    "descricao": "Lições sobre decisões financeiras, risco e visão de longo prazo.",
-    "link": "/livros/psicologia-financeira.html",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
-    "conteudo": "Aborda como emoções, comportamento e contexto moldam resultados financeiros mais do que técnica."
   },
   {
     "titulo": "Hábitos Atômicos",
     "autor": "James Clear",
     "categoria": "Produtividade",
-    "descricao": "Método prático para criar bons hábitos e eliminar comportamentos negativos.",
     "link": "/livros/habitos-atomicos.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L.jpg",
-    "conteudo": "Explica como pequenas mudanças diárias, quando consistentes, geram resultados significativos no longo prazo."
   }
 ]
