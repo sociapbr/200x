@@ -48,74 +48,131 @@ $(function () {
     
     ***************************/
 
-    var timeline = gsap.timeline();
+    function getCookieValue(name) {
+        var nameWithEquals = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie || "");
+        var cookies = decodedCookie.split(';');
 
-    timeline.to(".mil-preloader-animation", {
-        opacity: 1,
-    });
+        for (var i = 0; i < cookies.length; i += 1) {
+            var currentCookie = cookies[i].trim();
+            if (currentCookie.indexOf(nameWithEquals) === 0) {
+                return currentCookie.substring(nameWithEquals.length);
+            }
+        }
 
-    timeline.fromTo(
-        ".mil-animation-1 .mil-h3", {
-            y: "30px",
-            opacity: 0
-        }, {
-            y: "0px",
+        return null;
+    }
+
+    function setCookieForToday(name, value) {
+        var now = new Date();
+        var midnight = new Date(now);
+        midnight.setHours(24, 0, 0, 0);
+        var expires = "expires=" + midnight.toUTCString();
+        document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;SameSite=Lax";
+    }
+
+    function hidePreloaderImmediately() {
+        $('.mil-preloader').addClass('mil-hidden');
+        $('body').removeClass('mil-is-loading');
+        gsap.set('.mil-up', {
             opacity: 1,
-            stagger: 0.5,
-            duration: 1
-        },
-    );
+            y: 0,
+            scale: 1
+        });
+    }
 
-    timeline.to(".mil-animation-1 .mil-h3", {
-        opacity: 0,
-        y: '-30',
-    }, "+=.6");
+    function shouldShowDailyPreloader() {
+        var currentPath = window.location.pathname;
+        var isHomePage = currentPath === '/' || currentPath.endsWith('/index.html') || currentPath.endsWith('index.html');
 
-    timeline.fromTo(".mil-reveal-box", 0.1, {
-        opacity: 0,
-    }, {
-        opacity: 1,
-        x: '-30',
-    });
+        if (!isHomePage) {
+            return true;
+        }
 
-    timeline.to(".mil-reveal-box", 0.7, {
-        width: "100%",
-        x: 0,
-    }, "+=.2");
-    timeline.to(".mil-reveal-box", {
-        right: "0"
-    });
-    timeline.to(".mil-reveal-box", 0.5, {
-        width: "0%"
-    });
-    timeline.fromTo(".mil-animation-2 .mil-h3", {
-        opacity: 0,
-    }, {
-        opacity: 1,
-    }, "-=.5");
-    timeline.to(".mil-animation-2 .mil-h3", 0.8, {
-        opacity: 0,
-        y: '-30'
-    }, "+=.7");
-    timeline.to(".mil-preloader", 1, {
-        opacity: 0,
-        ease: 'sine',
-    }, "+=.3");
-    timeline.fromTo(".mil-up", 1, {
-        opacity: 0,
-        y: 40,
-        scale: .98,
-        ease: 'sine',
+        var today = new Date().toISOString().slice(0, 10);
+        var cookieName = 'mil_preloader_seen_on';
+        var lastSeen = getCookieValue(cookieName);
 
-    }, {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        onComplete: function () {
-            $('.mil-preloader').addClass("mil-hidden");
-            $('body').removeClass('mil-is-loading');
-        },
-    }, "-=1");
+        if (lastSeen === today) {
+            return false;
+        }
+
+        setCookieForToday(cookieName, today);
+        return true;
+    }
+
+    if (shouldShowDailyPreloader()) {
+        var timeline = gsap.timeline();
+
+        timeline.to(".mil-preloader-animation", {
+            opacity: 1,
+        });
+
+        timeline.fromTo(
+            ".mil-animation-1 .mil-h3", {
+                y: "30px",
+                opacity: 0
+            }, {
+                y: "0px",
+                opacity: 1,
+                stagger: 0.5,
+                duration: 1
+            },
+        );
+
+        timeline.to(".mil-animation-1 .mil-h3", {
+            opacity: 0,
+            y: '-30',
+        }, "+=.6");
+
+        timeline.fromTo(".mil-reveal-box", 0.1, {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            x: '-30',
+        });
+
+        timeline.to(".mil-reveal-box", 0.7, {
+            width: "100%",
+            x: 0,
+        }, "+=.2");
+        timeline.to(".mil-reveal-box", {
+            right: "0"
+        });
+        timeline.to(".mil-reveal-box", 0.5, {
+            width: "0%"
+        });
+        timeline.fromTo(".mil-animation-2 .mil-h3", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+        }, "-=.5");
+        timeline.to(".mil-animation-2 .mil-h3", 0.8, {
+            opacity: 0,
+            y: '-30'
+        }, "+=.7");
+        timeline.to(".mil-preloader", 1, {
+            opacity: 0,
+            ease: 'sine',
+        }, "+=.3");
+        timeline.fromTo(".mil-up", 1, {
+            opacity: 0,
+            y: 40,
+            scale: .98,
+            ease: 'sine',
+
+        }, {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            onComplete: function () {
+                $('.mil-preloader').addClass("mil-hidden");
+                $('body').removeClass('mil-is-loading');
+            },
+        }, "-=1");
+    } else {
+        hidePreloaderImmediately();
+    }
     /***************************
 
     anchor scroll
