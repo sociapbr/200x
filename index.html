@@ -432,6 +432,25 @@
                     </div>
                 </div>
 
+                <section class="mil-soft-bg">
+                    <div class="container mil-p-120-90">
+                        <div class="row align-items-center mil-mb-30">
+                            <div class="col-lg-8 mil-mb-30">
+                                <span class="mil-suptitle mil-up">Biblioteca</span>
+                                <h3 class="mil-up">Livros selecionados para você</h3>
+                            </div>
+                            <div class="col-lg-4 mil-mb-30">
+                                <div class="mil-adaptive-right mil-up">
+                                    <a href="/biblioteca.html" class="mil-link mil-dark mil-arrow-place">
+                                        <span>Ver biblioteca completa</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="home-books-list" class="row mil-services-grid m-0" aria-live="polite"></div>
+                    </div>
+                </section>
+
                 <section>
                     <div class="container mil-p-120-60">
                         <div class="row align-items-center mil-mb-30">
@@ -634,6 +653,86 @@
     <script src="/js/plugins/smooth-scroll.js"></script>
     <script src="/js/plugins/ScrollTrigger.min.js"></script>
     <script src="/js/plugins/ScrollTo.min.js"></script>
+    <script>
+        const homeBooksList = document.getElementById('home-books-list');
+
+        function shuffleBooks(books) {
+            const shuffled = [...books];
+            for (let i = shuffled.length - 1; i > 0; i -= 1) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function createHomeBookCard(book) {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-lg-4 mil-services-grid-item p-0';
+
+            const card = document.createElement('article');
+            card.className = 'mil-service-card-sm mil-up';
+
+            const image = document.createElement('img');
+            image.src = book.imagem;
+            image.alt = `Capa do livro ${book.titulo}`;
+            image.loading = 'lazy';
+            image.className = 'mil-mb-20';
+
+            const category = document.createElement('p');
+            category.className = 'mil-light-soft mil-mb-15';
+            category.textContent = book.categoria;
+
+            const title = document.createElement('h5');
+            title.className = 'mil-muted mil-mb-10';
+            title.textContent = book.titulo;
+
+            const author = document.createElement('p');
+            author.className = 'mil-light-soft mil-mb-20';
+            author.textContent = book.autor;
+
+            const link = document.createElement('a');
+            link.className = 'mil-link mil-dark mil-arrow-place';
+            link.href = book.link;
+            link.innerHTML = '<span>Ver resumo</span>';
+
+            card.appendChild(image);
+            card.appendChild(category);
+            card.appendChild(title);
+            card.appendChild(author);
+            card.appendChild(link);
+            col.appendChild(card);
+
+            return col;
+        }
+
+        async function loadHomeBooks() {
+            if (!homeBooksList) {
+                return;
+            }
+
+            try {
+                const response = await fetch('/data/livros-referencia.json', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Erro ao carregar livros: ${response.status}`);
+                }
+
+                const books = await response.json();
+                const randomBooks = shuffleBooks(books).slice(0, 3);
+                const fragment = document.createDocumentFragment();
+
+                randomBooks.forEach((book) => {
+                    fragment.appendChild(createHomeBookCard(book));
+                });
+
+                homeBooksList.innerHTML = '';
+                homeBooksList.appendChild(fragment);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        loadHomeBooks();
+    </script>
     <script src="/js/main.js"></script>
 </body>
 </html>
