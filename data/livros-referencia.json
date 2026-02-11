@@ -5,13 +5,13 @@
     "categoria": "Mentalidade financeira",
     "link": "https://www.amazon.com.br/dp/6555111100",
     "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
-  },  
+  },
   {
     "titulo": "Pai Rico, Pai Pobre",
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
     "descricao": "Princípios de educação financeira e construção de ativos.",
-    "link": "https://www.amazon.com.br/dp/8550801488",
+    "link": "/livros/pai-rico-pai-pobre.html",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg",
     "conteudo": "Mostra diferenças de mentalidade entre trabalhar por dinheiro e construir ativos que geram renda."
   },

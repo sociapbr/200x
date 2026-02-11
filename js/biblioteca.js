@@ -38,8 +38,11 @@
     const link = document.createElement('a');
     link.className = 'mil-link mil-arrow-place';
     link.href = book.link;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
+    const isExternalLink = /^https?:\/\//i.test(book.link);
+    if (isExternalLink) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
     link.textContent = 'Ver livro';
 
     card.appendChild(image);
