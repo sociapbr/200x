@@ -7,6 +7,20 @@
     "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
   },
   {
+    "titulo": "A arte de gastar dinheiro",
+    "autor": "Morgan Housel",
+    "categoria": "Finanças comportamentais",
+    "link": "/livros/a-arte-de-gastar-dinheiro.html",
+    "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._SY466_.jpg"
+  },
+  {
+    "titulo": "O mesmo de sempre",
+    "autor": "Morgan Housel",
+    "categoria": "Comportamento",
+    "link": "/livros/o-mesmo-de-sempre.html",
+    "imagem": "https://m.media-amazon.com/images/I/81fknrJM0yL._SY466_.jpg"
+  },
+  {
     "titulo": "Pai Rico, Pai Pobre",
     "autor": "Robert T. Kiyosaki",
     "categoria": "Mentalidade financeira",
