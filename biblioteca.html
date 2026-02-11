@@ -67,7 +67,10 @@
                             <div class="col-lg-12">
                                 <span class="mil-suptitle mil-mb-30">Biblioteca</span>
                                 <h1 class="mil-mb-30">Livros de referência</h1>
-                                <p class="mil-mb-60">Sugestões de leitura para evoluir sua educação financeira.</p>
+                                <p class="mil-mb-60">Bem-vindo à <b>Biblioteca de Livros de Referência do 200x</b>, um espaço dedicado à sua evolução no universo das finanças.</p>
+                                <p class="mil-mb-60">Aqui reunimos recomendações de obras essenciais que ajudam tanto iniciantes quanto profissionais a ampliar o conhecimento sobre educação financeira, investimentos, gestão de patrimônio e tomada de decisões econômicas inteligentes.</p>
+                                <p class="mil-mb-60">Acreditamos que a leitura é uma ferramenta poderosa para desenvolver uma compreensão sólida dos conceitos que regem o mundo financeiro. Por isso, nossa biblioteca seleciona materiais de referência confiáveis e relevantes, pensados para apoiar sua trajetória de aprendizado e potencializar sua capacidade de agir com mais segurança e estratégia em sua vida financeira.</p>
+                                <p class="mil-mb-60">Explore nossas sugestões e dê os próximos passos rumo a uma jornada de aprendizado contínuo — porque investir em conhecimento é o primeiro passo para alcançar seus objetivos financeiros.</p>
                             </div>
                         </div>
 
@@ -83,7 +86,90 @@
     </div>
 
     <script src="/js/plugins/jquery.min.js"></script>
-    <script src="/js/biblioteca.js"></script>
+    <script>
+          const listElement = document.getElementById('books-list');
+  const errorElement = document.getElementById('books-error');
+
+  function createBookCard(book) {
+    const col = document.createElement('div');
+    col.className = 'col-md-6 col-lg-4 mil-services-grid-item p-0';
+
+    const card = document.createElement('article');
+    card.className = 'mil-service-card-sm mil-book-card';
+
+    const image = document.createElement('img');
+    image.className = 'mil-book-cover mil-mb-20';
+    image.src = book.imagem;
+    image.alt = `Capa do livro ${book.titulo}`;
+    image.loading = 'lazy';
+
+    const category = document.createElement('p');
+    category.className = '';
+    category.textContent = book.categoria;
+
+    const title = document.createElement('h5');
+    title.className = '';
+    title.textContent = book.titulo;
+
+    const author = document.createElement('p');
+    author.className = 'mil-mb-15';
+    author.textContent = book.autor;
+
+//   const description = document.createElement('p');
+//   description.className = 'mil-mb-15';
+//   description.textContent = book.descricao;
+
+//   const contentDescription = document.createElement('p');
+//   contentDescription.className = 'mil-mb-30';
+//   contentDescription.textContent = `Conteúdo: ${book.conteudo}`;
+
+    const link = document.createElement('a');
+    link.className = 'mil-link mil-arrow-place';
+    link.href = book.link;
+    const isExternalLink = /^https?:\/\//i.test(book.link);
+    if (isExternalLink) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+    link.textContent = 'Ver resumo';
+
+    card.appendChild(image);
+    card.appendChild(category);
+    card.appendChild(title);
+    card.appendChild(author);
+//   card.appendChild(description);
+//   card.appendChild(contentDescription);
+    card.appendChild(link);
+
+    col.appendChild(card);
+    return col;
+  }
+
+  async function loadBooks() {
+    try {
+      const response = await fetch('/data/livros-referencia.json', { cache: 'no-store' });
+
+      if (!response.ok) {
+        throw new Error(`Erro ao carregar JSON: ${response.status}`);
+      }
+
+      const books = await response.json();
+      const fragment = document.createDocumentFragment();
+
+      books.forEach((book) => {
+        fragment.appendChild(createBookCard(book));
+      });
+
+      listElement.innerHTML = '';
+      listElement.appendChild(fragment);
+    } catch (error) {
+      console.error(error);
+      errorElement.style.display = 'block';
+    }
+  }
+
+  loadBooks();
+    </script>
 </body>
 
 </html>
