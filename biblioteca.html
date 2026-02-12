@@ -103,6 +103,10 @@
     image.alt = `Capa do livro ${book.titulo}`;
     image.loading = 'lazy';
 
+    const imageLink = document.createElement('a');
+    imageLink.href = book.link;
+    imageLink.appendChild(image);
+
     const category = document.createElement('p');
     category.className = '';
     category.textContent = book.categoria;
@@ -118,14 +122,9 @@
     const link = document.createElement('a');
     link.className = 'mil-link mil-arrow-place';
     link.href = book.link;
-    const isExternalLink = /^https?:\/\//i.test(book.link);
-    if (isExternalLink) {
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-    }
     link.textContent = 'Ver resumo';
 
-    card.appendChild(image);
+    card.appendChild(imageLink);
     card.appendChild(category);
     card.appendChild(title);
     card.appendChild(author);
