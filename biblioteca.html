@@ -87,15 +87,15 @@
 
     <script src="/js/plugins/jquery.min.js"></script>
     <script>
-          const listElement = document.getElementById('books-list');
-  const errorElement = document.getElementById('books-error');
+        const listElement = document.getElementById('books-list');
+        const errorElement = document.getElementById('books-error');
 
-  function createBookCard(book) {
-    const col = document.createElement('div');
-    col.className = 'col-md-6 col-lg-4 mil-services-grid-item p-0';
+        function createBookCard(book) {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-lg-4 mil-services-grid-item p-0';
 
-    const card = document.createElement('article');
-    card.className = 'mil-service-card-sm mil-book-card';
+            const card = document.createElement('article');
+            card.className = 'mil-service-card-sm mil-book-card';
 
     const image = document.createElement('img');
     image.className = 'mil-book-cover mil-mb-20';
