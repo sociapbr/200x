@@ -1,23 +1,7 @@
-/* -------------------------------------------
-
-Name: 		Ruizarch
-Version:    1.0
-Developer:	Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). email: miller.themes@gmail.com
-
-------------------------------------------- */
-
 $(function () {
 
     "use strict";
 
-    /***************************
-
-    swup
-
-    ***************************/
     const options = {
         containers: ['#swupMain', '#swupMenu'],
         animateHistoryBrowsing: true,
@@ -26,11 +10,6 @@ $(function () {
     };
     const swup = new Swup(options);
 
-    /***************************
-
-    register gsap plugins
-
-    ***************************/
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     /***************************
 
@@ -921,11 +900,6 @@ $(function () {
             $(this).toggleClass('mil-active');
             $(this).next().toggleClass('mil-active');
         });
-        /***************************
-
-        scroll animations
-
-        ***************************/
 
         const appearance = document.querySelectorAll(".mil-up");
 
@@ -1006,11 +980,7 @@ $(function () {
                 }
             });
         });
-        /***************************
 
-        fancybox
-
-        ***************************/
         $('[data-fancybox="gallery"]').fancybox({
             buttons: [
             "slideShow",
@@ -1022,11 +992,6 @@ $(function () {
             protect: true
         });
         $.fancybox.defaults.hash = false;
-        /***************************
-
-        reviews slider
-
-        ***************************/
 
         var menu = ['<div class="mil-custom-dot mil-slide-1"></div>', '<div class="mil-custom-dot mil-slide-2"></div>', '<div class="mil-custom-dot mil-slide-3"></div>', '<div class="mil-custom-dot mil-slide-4"></div>', '<div class="mil-custom-dot mil-slide-5"></div>', '<div class="mil-custom-dot mil-slide-6"></div>', '<div class="mil-custom-dot mil-slide-7"></div>']
         var mySwiper = new Swiper('.mil-reviews-slider', {
