@@ -415,13 +415,15 @@ a {
 }
 
 .mil-img-frame {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   width: 100%;
   padding-bottom: 140%;
 }
+
 .mil-img-frame img {
-  position: absolute;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
   top: 0;
   left: 0;
   width: 100%;
