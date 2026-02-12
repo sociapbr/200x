@@ -72,12 +72,41 @@ $(function () {
     }
 
     function hidePreloaderImmediately() {
-        $('.mil-preloader').addClass('mil-hidden');
-        $('body').removeClass('mil-is-loading');
+        gsap.set('.mil-preloader-animation', {
+            opacity: 1
+        });
+
+        gsap.set('.mil-animation-1 .mil-h3', {
+            opacity: 0,
+            y: -30
+        });
+
+        gsap.set('.mil-reveal-box', {
+            opacity: 1,
+            x: 0,
+            right: 0,
+            width: '0%'
+        });
+
+        gsap.set('.mil-animation-2 .mil-h3', {
+            opacity: 1,
+            y: 0
+        });
+
         gsap.set('.mil-up', {
             opacity: 1,
             y: 0,
             scale: 1
+        });
+
+        gsap.to('.mil-preloader', {
+            opacity: 0,
+            duration: 0.6,
+            ease: 'sine',
+            onComplete: function () {
+                $('.mil-preloader').addClass('mil-hidden');
+                $('body').removeClass('mil-is-loading');
+            }
         });
     }
 
